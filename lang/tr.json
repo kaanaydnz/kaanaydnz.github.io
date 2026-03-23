@@ -1,0 +1,92 @@
+{
+    "page": {
+        "footAngleTitle": "FootAngle - Kaan Aydeniz",
+        "horseRacingTitle": "At Yarışı Oyunu - Kaan Aydeniz"
+    },
+    "nav": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımda",
+        "portfolio": "Portföy",
+        "articles": "Yazılar",
+        "contact": "İletişim"
+    },
+    "hero": {
+        "title": "Merhaba — Ben Kaan.",
+        "subtitle": "Dijital öğrenme deneyimleri tasarlıyor ve bu deneyimlerin arkasındaki yazılımı geliştiriyorum."
+    },
+    "about": {
+        "title": "Hakkımda",
+        "paragraphs": [
+            "Merhaba! Ben Kaan. Boğaziçi Üniversitesi Bilgisayar ve Öğretim Teknolojileri Öğretmenliği (BÖTE) bölümünde ikinci sınıf öğrencisiyim. 2019 yılında Mehmet Tekinalp Lisesi’nden mezun oldum ve İstanbul’da yaşıyorum. Teknoloji ve eğitime büyük bir ilgi duyuyor, sürekli öğrenmeye ve kendimi geliştirmeye önem veriyorum.",
+            "Çocukluk yıllarımdan beri bilgisayar ve teknolojiyle iç içeyim. HTML, JavaScript, Python, C/C++ gibi dillerde çalışmalar yaptım. Bunun yanında ofis uygulamaları, farklı işletim sistemleri ve Articulate gibi araçlarla etkileşimli projeler geliştirme konusunda deneyim kazandım.",
+            "Teknoloji ve eğitim alanındaki bilgi ve becerilerimi anlamlı öğrenme deneyimleri tasarlamak için kullanmayı hedefliyorum. Sürekli gelişmeye, iş birliğine ve yenilikçi projelerde yer almaya açık biriyim."
+        ],
+        "programmingLanguages": {
+            "title": "Programlama",
+            "items": [
+                "C",
+                "C++",
+                "JavaScript",
+                "Python"
+            ]
+        },
+        "tools": {
+            "title": "Araçlar",
+            "items": [
+                "Adobe Premiere",
+                "SketchUp",
+                "Articulate Storyline",
+                "Canva"
+            ]
+        },
+        "spokenLanguages": {
+            "title": "Diller",
+            "items": [
+                "🇹🇷 Türkçe (Ana Dil)",
+                "🇬🇧 İngilizce (B2–C1)",
+                "🇩🇪 Almanca (Başlangıç)"
+            ]
+        },
+        "hobbies": {
+            "title": "Hobiler",
+            "items": [
+                "🚘 Araçlar",
+                "🖥️ Teknoloji",
+                "☕️ Kahve",
+                "🎵 Müzik"
+            ]
+        }
+    },
+    "portfolio": {
+        "title": "Pörtföy",
+        "sortNewest": "En yeni önce",
+        "sortOldest": "En eski önce",
+        "openProject": "Projeyi Aç",
+        "openOnScratch": "Scratch'te Aç",
+        "projects": {
+            "footAngle": {
+                "title": "FootAngle - Futbol ile Açıları Öğrenme",
+                "shortDescription": "FootAngle, öğrenenlerin bir futbolcu rolünü üstlenerek gerçekçi antrenman senaryoları üzerinden açı kavramlarını anlamalarını ve uygulamalarını sağlayan etkileşimli bir öğrenme modülüdür.",
+                "paragraphs": [
+                    "FootAngle, öğrenenlerin açı kavramlarını gerçekçi antrenman senaryoları üzerinden anlaması ve uygulaması için bir futbolcunun rolünü üstlendiği etkileşimli bir öğrenme modülüdür.",
+                    "Articulate Storyline kullanılarak geliştirilen bu modül, öğretim tasarımı ilkelerini senaryo temelli öğrenme ile birleştirir. Öğrenenler şut açılarını aktif olarak ayarlar, topun yörüngesini analiz eder ve verdikleri kararlara göre anında geri bildirim alır.",
+                    "Proje; etkileşimli tetikleyiciler, değişkenler, koşullu dallanmalar ve görsel geri bildirim unsurlarını bir araya getirerek ilgi çekici ve sürükleyici bir öğrenme deneyimi sunar. Dijital bir öğrenme ortamında oyunlaştırma stratejilerinin ve deneyimsel öğrenmenin uygulanmasını göstermektedir."
+                ]
+            },
+            "horseRacing": {
+                "title": "At Yarışı Oyunu",
+                "shortDescription": "At Yarışı Oyunu, oyuncuların olasılık ve strateji kullanarak yarış sonuçlarını tahmin ettiği ve temel oyun mekaniğini etkileşimli şekilde deneyimlediği Scratch tabanlı bir oyundur.",
+                "description": "Scratch ile geliştirilmiş bir at yarışı tahmin oyunudur. Oyuncu bir at seçer ve rastgele belirlenen yarış sonucuna göre puan kazanır. Proje; değişkenler, koşullu ifadeler ve olay tabanlı programlama gibi temel oyun mekaniklerini içermektedir."
+            }
+        }
+    },
+    "articles": {
+        "title": "Yazılar",
+        "sortNewest": "En yeni önce",
+        "sortOldest": "En eski önce"
+    },
+    "contact": {
+        "title": "İletişim",
+        "description": "Benimle iletişime geçmek veya çalışmalarım hakkında daha fazla bilgi almak isterseniz, bana e-posta yoluyla ya da aşağıdaki profesyonel profillerim üzerinden ulaşabilirsiniz."
+    }
+}

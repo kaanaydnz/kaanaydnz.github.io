@@ -1,0 +1,239 @@
+body,
+.navbar,
+.card,
+.dropdown-menu,
+.btn,
+footer,
+.tiffany-light-bg,
+.tiffany-dark-bg {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+svg,
+.tiffany-color,
+.nav-link,
+.navbar-brand {
+  transition: color 0.3s ease, fill 0.3s ease;
+}
+
+.btn:hover,
+a:hover {
+  transition: color 0.1s ease, background-color 0.1s ease;
+}
+
+.color-inherit {
+  color: inherit;
+}
+
+.text-indent {
+  text-indent: 2em;
+}
+
+:root {
+  --tiff-bg: #C7F0EE;
+  --tiff-text: #1F6F78;
+}
+
+[data-bs-theme="dark"] {
+  --tiff-bg: #008A95;
+  --tiff-text: #9FE5E0;
+}
+
+.tiffany-light-bg,
+.tiffany-dark-bg {
+  background-color: var(--tiff-bg) !important;
+  transition: background-color 0.3s ease;
+}
+
+.tiffany-color {
+  color: var(--tiff-text) !important;
+  transition: color 0.3s ease;
+}
+
+.nav-item {
+  font-size: 1.2em;
+}
+
+.title-font {
+  font-family: 'Lora', serif;
+}
+
+.content-font {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.portfolio-img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.portfolio-embed {
+  max-width: 600px;
+}
+
+@media (min-width: 1200px) {
+  .portfolio-embed {
+    max-width: 700px;
+    margin-left: 1rem;
+  }
+}
+
+.sort-btn i {
+  transition: transform 0.2s ease;
+}
+
+.sort-btn:hover i {
+  transform: translateY(2px);
+}
+
+.content-fade {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+main {
+  position: relative;
+  overflow-x: hidden;
+  min-height: 80vh;
+}
+
+main section {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: var(--bs-body-bg);
+  transition: background-color 0.3s ease;
+}
+
+main section.active {
+  display: block;
+  position: relative;
+  opacity: 1;
+}
+
+main section.animating {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide-out-left {
+  animation: slideOutLeft 0.5s ease-in-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.5s ease-in-out forwards;
+}
+
+.animate-slide-out-right {
+  animation: slideOutRight 0.5s ease-in-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.5s ease-in-out forwards;
+}
+
+main {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+body.fade-out main {
+  opacity: 0;
+}

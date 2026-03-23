@@ -1,0 +1,92 @@
+{
+    "page": {
+        "footAngleTitle": "FootAngle - Kaan Aydeniz",
+        "horseRacingTitle": "Horse Racing Game - Kaan Aydeniz"
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About Me",
+        "portfolio": "Portfolio",
+        "articles": "Articles",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Welcome — I’m Kaan.",
+        "subtitle": "I design digital learning experiences and develop the software behind them."
+    },
+    "about": {
+        "title": "About Me",
+        "paragraphs": [
+            "Hi! I’m Kaan, a sophomore at Boğaziçi University studying Computer Education and Educational Technology (CET). I graduated from Mehmet Tekinalp High School in 2019 and currently live in Istanbul. I am passionate about technology and education, and I am always curious to learn more.",
+            "I have been interested in technology and computers since childhood. I have developed skills in HTML, JavaScript, Python, C/C++, and more. I am also experienced in using office applications, various operating systems, and tools like Articulate for creating interactive projects.",
+            "I aim to apply my skills in technology and education to create meaningful learning experiences. I am always looking for opportunities to grow, collaborate, and contribute to innovative projects."
+        ],
+        "programmingLanguages": {
+            "title": "Programming",
+            "items": [
+                "C",
+                "C++",
+                "JavaScript",
+                "Python"
+            ]
+        },
+        "tools": {
+            "title": "Tools",
+            "items": [
+                "Adobe Premiere",
+                "SketchUp",
+                "Articulate Storyline",
+                "Canva"
+            ]
+        },
+        "spokenLanguages": {
+            "title": "Languages",
+            "items": [
+                "🇹🇷 Turkish (Native)",
+                "🇬🇧 English (B2–C1)",
+                "🇩🇪 German (Pre-Intermediate)"
+            ]
+        },
+        "hobbies": {
+            "title": "Hobbies",
+            "items": [
+                "🚘 Vehicles",
+                "🖥️ Technology",
+                "☕️ Coffee",
+                "🎵 Music"
+            ]
+        }
+    },
+    "portfolio": {
+        "title": "Portfolio",
+        "sortNewest": "Newest first",
+        "sortOldest": "Oldest first",
+        "openProject": "Open Project",
+        "openOnScratch": "Open on Scratch",
+        "projects": {
+            "footAngle": {
+                "title": "FootAngle - Learning Angles Through Football",
+                "shortDescription": "FootAngle is an interactive learning module where learners take the role of a football player to understand and apply angle concepts through realistic training scenarios.",
+                "paragraphs": [
+                    "FootAngle is an interactive learning module where learners take the role of a football player to understand and apply angle concepts through realistic training scenarios.",
+                    "Developed using Articulate Storyline, this module combines instructional design principles with scenario-based learning. Learners actively adjust shooting angles, analyze ball trajectories, and receive immediate feedback based on their decisions.",
+                    "The project integrates interactive triggers, variables, conditional branching, and visual feedback elements to create an engaging and immersive learning experience. It demonstrates the application of gamification strategies and experiential learning within a digital learning environment."
+                ]
+            },
+            "horseRacing": {
+                "title": "Horse Racing Game",
+                "shortDescription": "Horse Racing Game is a Scratch-based game where players use probability and strategy to predict race outcomes and experience basic game mechanics through interactive play.",
+                "description": "A horse racing prediction game developed using Scratch. The player selects a horse and earns points based on randomly generated race outcomes. The project demonstrates fundamental game mechanics, including variables, conditionals, and event-driven programming."
+            }
+        }
+    },
+    "articles": {
+        "title": "Articles",
+        "sortNewest": "Newest first",
+        "sortOldest": "Oldest first"
+    },
+    "contact": {
+        "title": "Contact Me",
+        "description": "If you’d like to get in touch or learn more about my work, you can reach me via email or through my professional profiles below."
+    }
+}

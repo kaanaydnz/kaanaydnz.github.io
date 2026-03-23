@@ -1,11 +1,378 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kaan Aydeniz</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- CSS Main File -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Nunito+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/70927e11d1779ee1fa9a6b97278c01c1?family=Brush+Script+MT"
+        rel="stylesheet">
+    <script>
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute('data-bs-theme', savedTheme);
+    </script>
 </head>
+
 <body>
-    
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light tiffany-light-bg title-font">
+            <div class="container">
+                <a class="navbar-brand fs-1 nav-link" style="font-family: 'Brush Script MT', cursive;" href="#home">Kaan
+                    Aydeniz</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home" data-i18n="nav.home"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-i18n="nav.about"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio" data-i18n="nav.portfolio"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#articles" data-i18n="nav.articles"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" data-i18n="nav.contact"></a>
+                        </li>
+                        <li class="nav-item py-2 py-lg-1 col-lg-auto">
+                            <div class="vr d-none d-lg-flex h-100 mx-2"></div>
+                            <hr class="d-lg-none my-2">
+                        </li>
+                        <li class="nav-item my-auto">
+                            <a class="nav-link" role="button" id="darkModeBtn"><i class="bi bi-moon-fill"></i></a>
+                        </li>
+                        <li class="nav-item dropdown my-auto">
+                            <a class="nav-link dropdown-toggle" role="button" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="bi bi-globe"></i></a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownId">
+                                <button class="dropdown-item" data-lang="en">English</button>
+                                <button class="dropdown-item" data-lang="tr">Türkçe</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr class="m-0 p-0">
+
+    </header>
+    <main>
+        <section id="home">
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center"
+                style="margin-top: 12%;">
+                <h1 class="mt-5 title-font text-center" data-i18n="hero.title"></h1>
+                <h3 class="mt-5 title-font text-center" data-i18n="hero.subtitle"></h3>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container-fluid">
+                <div class="card shadow mt-3">
+                    <div class="card-body">
+                        <div class="text-start ms-5">
+                            <h3 class="d-inline-block card shadow tiffany-light-bg px-3 py-2 title-font"
+                                data-i18n="about.title"></h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-8">
+                                <br><br>
+                                <div class="mx-5 fs-5" data-i18n-paragraphs="about.paragraphs"></div>
+                                <div class="row mt-4 g-4">
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="card shadow h-auto">
+                                            <div class="card-body">
+                                                <div class="text-start">
+                                                    <h4 data-i18n="about.programmingLanguages.title"
+                                                        class="d-inline-block card shadow tiffany-light-bg px-3 py-2 title-font">
+                                                    </h4>
+                                                </div>
+                                                <div data-i18n-list="about.programmingLanguages.items"
+                                                    class="card-text mt-2 ms-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="card shadow h-auto">
+                                            <div class="card-body">
+                                                <div class="text-start">
+                                                    <h4 data-i18n="about.tools.title"
+                                                        class="d-inline-block card shadow tiffany-light-bg px-3 py-2 title-font">
+                                                    </h4>
+                                                </div>
+                                                <div data-i18n-list="about.tools.items" class="card-text mt-2 ms-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="card shadow h-auto">
+                                            <div class="card-body">
+                                                <div class="text-start">
+                                                    <h4 data-i18n="about.spokenLanguages.title"
+                                                        class="d-inline-block card shadow tiffany-light-bg px-3 py-2 title-font">
+                                                    </h4>
+                                                </div>
+                                                <div data-i18n-list="about.spokenLanguages.items"
+                                                    class="card-text mt-2 ms-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-6">
+                                        <div class="card shadow h-auto">
+                                            <div class="card-body">
+                                                <div class="text-start">
+                                                    <h4 data-i18n="about.hobbies.title"
+                                                        class="d-inline-block card shadow tiffany-light-bg px-3 py-2 title-font">
+                                                    </h4>
+                                                </div>
+                                                <div data-i18n-list="about.hobbies.items" class="card-text mt-2 ms-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mt-3 mt-md-5">
+                                <img class="card-img-top rounded" src="assets/images/profile.jpg" alt="Profile Image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container-fluid content-font">
+                <div class="card shadow mt-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-3 ms-5">
+                            <h3 class="d-inline-block card shadow tiffany-light-bg px-3 py-2 title-font mb-0"
+                                data-i18n="portfolio.title"></h3>
+                            <button id="portfolioSortBtn"
+                                class="btn sort-btn btn-sm d-flex align-items-center gap-1 mt-3 border">
+                                <i id="portfolioSortIcon" class="bi bi-arrow-down"></i>
+                                <span id="portfolioSortText"></span>
+                            </button>
+                        </div>
+                        <div class="row mt-4 g-4">
+                            <div class="col-12 col-md-6 col-lg-4" data-date="2025-12">
+                                <div class="card shadow h-100">
+                                    <a href="projects/footangle/index.html" class="text-decoration-none color-inherit">
+                                        <img class="card-img-top portfolio-img"
+                                            src="assets/images/footangle_thumbnail.png" alt="FootAngle Image" />
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="projects/footangle/index.html"
+                                            class="text-decoration-none color-inherit">
+                                            <h4 class="card-title d-inline-block"
+                                                data-i18n="portfolio.projects.footAngle.title"></h4>
+                                        </a>
+                                        <p class="small text-muted mb-2">
+                                            <span class="tool">Articulate Storyline</span>
+                                            <span class="mx-1">·</span>
+                                            <span class="date" data-date="2025-12"></span>
+                                        </p>
+                                        <p class="card-text" data-i18n="portfolio.projects.footAngle.shortDescription">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-date="2025-11">
+                                <div class="card shadow h-100">
+                                    <a href="projects/horse-racing/index.html"
+                                        class="text-decoration-none color-inherit">
+                                        <img class="card-img-top portfolio-img"
+                                            src="assets/images/horseracing_thumbnail.png" alt="Horse Racing Image" />
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="projects/horse-racing/index.html"
+                                            class="text-decoration-none color-inherit">
+                                            <h4 class="card-title d-inline-block"
+                                                data-i18n="portfolio.projects.horseRacing.title"></h4>
+                                        </a>
+                                        <p class="small text-muted mb-2">
+                                            <span class="tool">Scratch</span>
+                                            <span class="mx-1">·</span>
+                                            <span class="date" data-date="2025-11"></span>
+                                        </p>
+                                        <p class="card-text"
+                                            data-i18n="portfolio.projects.horseRacing.shortDescription"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-date="2026">
+                                <div class="card shadow h-100">
+                                    <a href="" class="text-decoration-none color-inherit">
+                                        <img class="card-img-top portfolio-img" src="" alt="" />
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="" class="text-decoration-none color-inherit">
+                                            <h4 class="card-title d-inline-block">New projects coming soon!</h4>
+                                        </a>
+                                        <p class="small text-muted mb-2">
+                                            <span class="tool"></span>
+                                            <span class="mx-1"></span>
+                                            <span class="date" data-date="2026"></span>
+                                        </p>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="articles">
+            <div class="container-fluid content-font">
+                <div class="card shadow mt-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center gap-3 ms-5">
+                            <h3 class="d-inline-block card shadow tiffany-light-bg px-3 py-2 title-font mb-0"
+                                data-i18n="articles.title"></h3>
+                            <button id="articleSortBtn"
+                                class="btn sort-btn btn-sm d-flex align-items-center gap-1 mt-3 border">
+                                <i id="articleSortIcon" class="bi bi-arrow-down"></i>
+                                <span id="articleSortText"></span>
+                            </button>
+                        </div>
+                        <div class="row mt-4 g-4">
+                            <div class="col-12 col-md-6 col-lg-4" data-date="2026">
+                                <div class="card shadow h-100">
+                                    <a href="" class="text-decoration-none color-inherit">
+                                        <img class="card-img-top portfolio-img" src="" alt="" />
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="" class="text-decoration-none color-inherit">
+                                            <h4 class="card-title d-inline-block">New articles coming soon!
+                                            </h4>
+                                        </a>
+                                        <p class="small text-muted mb-2">
+                                            <span class="tool"></span>
+                                            <span class="mx-1"></span>
+                                            <span class="date" data-date="2026"></span>
+                                        </p>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-date="2026">
+                                <div class="card shadow h-100">
+                                    <a href="" class="text-decoration-none color-inherit">
+                                        <img class="card-img-top portfolio-img" src="" alt="" />
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="" class="text-decoration-none color-inherit">
+                                            <h4 class="card-title d-inline-block">New articles coming soon!</h4>
+                                        </a>
+                                        <p class="small text-muted mb-2">
+                                            <span class="tool"></span>
+                                            <span class="mx-1"></span>
+                                            <span class="date" data-date="2026"></span>
+                                        </p>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4" data-date="2026">
+                                <div class="card shadow h-100">
+                                    <a href="" class="text-decoration-none color-inherit">
+                                        <img class="card-img-top portfolio-img" src="" alt="" />
+                                    </a>
+                                    <div class="card-body">
+                                        <a href="" class="text-decoration-none color-inherit">
+                                            <h4 class="card-title d-inline-block">New articles coming soon!</h4>
+                                        </a>
+                                        <p class="small text-muted mb-2">
+                                            <span class="tool"></span>
+                                            <span class="mx-1"></span>
+                                            <span class="date" data-date="2026"></span>
+                                        </p>
+                                        <p class="card-text">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="card shadow mt-3">
+                    <div class="card-body">
+                        <div class="text-start ms-5">
+                            <h3 class="d-inline-block card shadow tiffany-light-bg px-3 py-2 title-font"
+                                data-i18n="contact.title"></h3>
+                        </div>
+                        <div class="mt-4 mx-5">
+                            <p class="fs-5 mt-2">
+                                <span data-i18n="contact.description"></span>
+                                <br><br><a href="mailto:kaan_aydeniz@hotmail.com" class="color-inherit no-underline"><i
+                                        class="bi bi-envelope"></i>
+                                    <span class="underline-on-hover tiffany-color">kaan_aydeniz@hotmail.com</span></a>
+                                <br>
+                                <a href="https://www.linkedin.com/in/kaanaydnz/" target="_blank"
+                                    class="color-inherit no-underline"><i class="bi bi-linkedin"></i>
+                                    <span class="underline-on-hover tiffany-color">LinkedIn</span></a>
+                                <br>
+                                <a href="https://github.com/kaanaydnz" target="_blank"
+                                    class="color-inherit no-underline"><i class="bi bi-github"></i> <span
+                                        class="underline-on-hover tiffany-color">Github</span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="border-top mt-3 pt-3">
+        <div class="container text-center">
+            <div>
+                <a href="mailto:kaan_aydeniz@hotmail.com" class="social-icon color-inherit no-underline"><i
+                        class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/kaanaydnz/" target="_blank"
+                    class="social-icon color-inherit no-underline mx-1"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/kaanaydnz" target="_blank" class="social-icon color-inherit no-underline"><i
+                        class="bi bi-github"></i></a>
+            </div>
+            <p class="text-muted">© 2026 Kaan Aydeniz</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
+
+<script src="script.js"></script>
+
 </html>
