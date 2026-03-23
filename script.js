@@ -369,3 +369,9 @@ function navigateTo(targetId, isPopState = false) {
         });
     });
 });
+
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted || document.body.classList.contains('fade-out')) {
+        document.body.classList.remove('fade-out');
+    }
+});
