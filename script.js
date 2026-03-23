@@ -272,15 +272,23 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        function navigateTo(targetId) {
-            const activeSection = document.querySelector("main section.active");
-            // Safety check: if no active section exists, just activate the target
+function navigateTo(targetId, isPopState = false) {
+            let activeSection = document.querySelector("main section.active");
+            
             if (!activeSection) {
                 document.getElementById(targetId)?.classList.add("active");
                 return;
             }
 
-            if (isAnimating || activeSection.id === targetId) return;
+            if (activeSection.id === targetId) return;
+
+            if (isAnimating) {
+                document.querySelectorAll('main section').forEach(sec => {
+                    sec.classList.remove("animating", "animate-slide-out-left", "animate-slide-out-right", "animate-slide-in-left", "animate-slide-in-right");
+                });
+                isAnimating = false;
+                activeSection = document.querySelector("main section.active") || activeSection;
+            }
 
             const targetSection = document.getElementById(targetId);
             if (!targetSection) return;
@@ -295,8 +303,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const enterClass = isMovingForward ? "animate-slide-in-right" : "animate-slide-in-left";
 
             activeSection.classList.add("animating", exitClass);
-
             targetSection.classList.add("animating", enterClass, "active");
+            
             targetSection.addEventListener('animationend', () => {
                 activeSection.classList.remove("animating", exitClass, "active");
                 targetSection.classList.remove("animating", enterClass);
@@ -304,14 +312,17 @@ document.addEventListener("DOMContentLoaded", () => {
             }, { once: true });
 
             updateNavLinks(targetId);
-            history.pushState({ section: targetId }, "", `#${targetId}`);
+            
+            if (!isPopState) {
+                history.pushState({ section: targetId }, "", `#${targetId}`);
+            }
         }
 
         navLinks.forEach(link => {
             link.addEventListener("click", e => {
                 e.preventDefault();
                 const id = link.getAttribute("href").substring(1);
-                navigateTo(id);
+                navigateTo(id, false); 
             });
         });
 
@@ -319,7 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const id = location.hash.replace("#", "") || "home";
             const activeSection = document.querySelector("main section.active");
             if (activeSection && activeSection.id !== id) {
-                navigateTo(id);
+                navigateTo(id, true); 
             }
         });
 
