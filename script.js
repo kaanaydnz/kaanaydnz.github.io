@@ -382,6 +382,17 @@ window.addEventListener('pageshow', (event) => {
             
             if (sec.id === currentHash) {
                 sec.classList.add("active");
+                
+                requestAnimationFrame(() => {
+                    requestAnimationFrame(() => {
+                        sec.classList.add("animate-fade-in");
+                    });
+                });
+
+                sec.addEventListener('animationend', () => {
+                    sec.classList.remove("animate-fade-in");
+                }, { once: true });
+
             } else {
                 sec.classList.remove("active");
             }
