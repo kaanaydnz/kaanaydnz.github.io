@@ -371,7 +371,28 @@ function navigateTo(targetId, isPopState = false) {
 });
 
 window.addEventListener('pageshow', (event) => {
-    if (event.persisted || document.body.classList.contains('fade-out')) {
-        document.body.classList.remove('fade-out');
+    document.body.classList.remove('fade-out');
+    
+    if (document.getElementById("home") !== null) {
+        const currentHash = location.hash.replace("#", "") || "home";
+        const sections = document.querySelectorAll("main section");
+        
+        sections.forEach(sec => {
+            sec.classList.remove("animating", "animate-slide-out-left", "animate-slide-out-right", "animate-slide-in-left", "animate-slide-in-right", "animate-fade-in");
+            
+            if (sec.id === currentHash) {
+                sec.classList.add("active");
+            } else {
+                sec.classList.remove("active");
+            }
+        });
+
+        document.querySelectorAll(".nav-link[href^='#']").forEach(link => {
+            if (link.getAttribute("href").substring(1) === currentHash) {
+                link.classList.add("active");
+            } else {
+                link.classList.remove("active");
+            }
+        });
     }
 });
