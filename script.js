@@ -169,24 +169,36 @@ let portfolioNewestFirst = true;
 if (portfolioSortBtn && portfolioRow) {
     const portfolioItems = Array.from(portfolioRow.children);
 
+    function sortPortfolioItems() {
+        portfolioItems.sort((a, b) => {
+            const dateA = new Date(a.dataset.date);
+            const dateB = new Date(b.dataset.date);
+            return portfolioNewestFirst ? dateB - dateA : dateA - dateB;
+        });
+
+        portfolioItems.forEach(item => {
+            portfolioRow.appendChild(item);
+        });
+    }
+
+    sortPortfolioItems();
+
     portfolioSortBtn.addEventListener("click", () => {
         portfolioNewestFirst = !portfolioNewestFirst;
         portfolioItems.forEach(item => item.classList.add("content-fade"));
 
         setTimeout(() => {
-            portfolioItems.sort((a, b) => {
-                const dateA = new Date(a.dataset.date);
-                const dateB = new Date(b.dataset.date);
-                return portfolioNewestFirst ? dateB - dateA : dateA - dateB;
-            });
+            sortPortfolioItems();
 
             portfolioItems.forEach(item => {
-                portfolioRow.appendChild(item);
                 item.classList.remove("content-fade");
             });
         }, 250);
 
-        portfolioSortIcon.className = portfolioNewestFirst ? "bi bi-arrow-down" : "bi bi-arrow-up";
+        portfolioSortIcon.className = portfolioNewestFirst
+            ? "bi bi-arrow-down"
+            : "bi bi-arrow-up";
+
         portfolioSortText.textContent = portfolioNewestFirst
             ? currentTranslations.portfolio.sortNewest
             : currentTranslations.portfolio.sortOldest;
@@ -204,24 +216,36 @@ let articleNewestFirst = true;
 if (articleSortBtn && articleRow) {
     const articleItems = Array.from(articleRow.children);
 
+    function sortArticleItems() {
+        articleItems.sort((a, b) => {
+            const dateA = new Date(a.dataset.date);
+            const dateB = new Date(b.dataset.date);
+            return articleNewestFirst ? dateB - dateA : dateA - dateB;
+        });
+
+        articleItems.forEach(item => {
+            articleRow.appendChild(item);
+        });
+    }
+
+    sortArticleItems();
+
     articleSortBtn.addEventListener("click", () => {
         articleNewestFirst = !articleNewestFirst;
         articleItems.forEach(item => item.classList.add("content-fade"));
 
         setTimeout(() => {
-            articleItems.sort((a, b) => {
-                const dateA = new Date(a.dataset.date);
-                const dateB = new Date(b.dataset.date);
-                return articleNewestFirst ? dateB - dateA : dateA - dateB;
-            });
+            sortArticleItems();
 
             articleItems.forEach(item => {
-                articleRow.appendChild(item);
                 item.classList.remove("content-fade");
             });
         }, 250);
 
-        articleSortIcon.className = articleNewestFirst ? "bi bi-arrow-down" : "bi bi-arrow-up";
+        articleSortIcon.className = articleNewestFirst
+            ? "bi bi-arrow-down"
+            : "bi bi-arrow-up";
+
         articleSortText.textContent = articleNewestFirst
             ? currentTranslations.articles.sortNewest
             : currentTranslations.articles.sortOldest;
@@ -272,9 +296,9 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-function navigateTo(targetId, isPopState = false) {
+        function navigateTo(targetId, isPopState = false) {
             let activeSection = document.querySelector("main section.active");
-            
+
             if (!activeSection) {
                 document.getElementById(targetId)?.classList.add("active");
                 return;
@@ -304,7 +328,7 @@ function navigateTo(targetId, isPopState = false) {
 
             activeSection.classList.add("animating", exitClass);
             targetSection.classList.add("animating", enterClass, "active");
-            
+
             targetSection.addEventListener('animationend', () => {
                 activeSection.classList.remove("animating", exitClass, "active");
                 targetSection.classList.remove("animating", enterClass);
@@ -312,7 +336,7 @@ function navigateTo(targetId, isPopState = false) {
             }, { once: true });
 
             updateNavLinks(targetId);
-            
+
             if (!isPopState) {
                 history.pushState({ section: targetId }, "", `#${targetId}`);
             }
@@ -322,7 +346,7 @@ function navigateTo(targetId, isPopState = false) {
             link.addEventListener("click", e => {
                 e.preventDefault();
                 const id = link.getAttribute("href").substring(1);
-                navigateTo(id, false); 
+                navigateTo(id, false);
             });
         });
 
@@ -330,7 +354,7 @@ function navigateTo(targetId, isPopState = false) {
             const id = location.hash.replace("#", "") || "home";
             const activeSection = document.querySelector("main section.active");
             if (activeSection && activeSection.id !== id) {
-                navigateTo(id, true); 
+                navigateTo(id, true);
             }
         });
 
@@ -372,17 +396,17 @@ function navigateTo(targetId, isPopState = false) {
 
 window.addEventListener('pageshow', (event) => {
     document.body.classList.remove('fade-out');
-    
+
     if (document.getElementById("home") !== null) {
         const currentHash = location.hash.replace("#", "") || "home";
         const sections = document.querySelectorAll("main section");
-        
+
         sections.forEach(sec => {
             sec.classList.remove("animating", "animate-slide-out-left", "animate-slide-out-right", "animate-slide-in-left", "animate-slide-in-right", "animate-fade-in");
-            
+
             if (sec.id === currentHash) {
                 sec.classList.add("active");
-                
+
                 requestAnimationFrame(() => {
                     requestAnimationFrame(() => {
                         sec.classList.add("animate-fade-in");
@@ -405,5 +429,19 @@ window.addEventListener('pageshow', (event) => {
                 link.classList.remove("active");
             }
         });
+    }
+});
+
+// Carousel Keyboard Navigation
+document.addEventListener('keydown', function (event) {
+    const carouselElement = document.getElementById('carouselId');
+    if (!carouselElement) return;
+
+    const carousel = bootstrap.Carousel.getOrCreateInstance(carouselElement);
+
+    if (event.key === 'ArrowLeft') {
+        carousel.prev();
+    } else if (event.key === 'ArrowRight') {
+        carousel.next();
     }
 });
