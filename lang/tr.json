@@ -1,7 +1,11 @@
 {
     "page": {
         "footAngleTitle": "FootAngle - Kaan Aydeniz",
-        "horseRacingTitle": "At Yarışı Oyunu - Kaan Aydeniz"
+        "horseRacingTitle": "At Yarışı Oyunu - Kaan Aydeniz",
+        "spireSlayerTitle": "Spire Slayer - Kaan Aydeniz",
+        "schedSimTitle": "SchedSim - Kaan Aydeniz",
+        "parkingVideoTitle": "Paralel ve L Park Rehberi - Kaan Aydeniz",
+        "2048Title": "2048 Oyunu - Kaan Aydeniz"
     },
     "nav": {
         "home": "Ana Sayfa",
@@ -63,6 +67,8 @@
         "sortOldest": "En eski önce",
         "openProject": "Projeyi Aç",
         "openOnScratch": "Scratch'te Aç",
+        "watchOnYoutube": "YouTube'da İzle",
+        "viewonGithub": "GitHub'da İncele",
         "projects": {
             "footAngle": {
                 "title": "FootAngle - Futbol ile Açıları Öğrenme",
@@ -75,8 +81,40 @@
             },
             "horseRacing": {
                 "title": "At Yarışı Oyunu",
-                "shortDescription": "At Yarışı Oyunu, oyuncuların olasılık ve strateji kullanarak yarış sonuçlarını tahmin ettiği ve temel oyun mekaniğini etkileşimli şekilde deneyimlediği Scratch tabanlı bir oyundur.",
+                "shortDescription": "At Yarışı Oyunu, oyuncuların yarış sonuçlarını tahmin ettiği ve temel oyun mekaniğini etkileşimli şekilde deneyimlediği Scratch tabanlı bir oyundur.",
                 "description": "Scratch ile geliştirilmiş bir at yarışı tahmin oyunudur. Oyuncu bir at seçer ve rastgele belirlenen yarış sonucuna göre puan kazanır. Proje; değişkenler, koşullu ifadeler ve olay tabanlı programlama gibi temel oyun mekaniklerini içermektedir."
+            },
+            "spireSlayer": {
+                "title": "Spire Slayer",
+                "shortDescription": "C diliyle geliştirilmiş, \"roguelike\" bir deste kurma (deckbuilder) oyunu için komut satırı yorumlayıcısı ve durum yönetim sistemi. Bu proje; katı dilbilgisi doğrulamasını, dinamik bellek yönetimini ve sağlam veri yapılarını öne çıkarıyor.",
+                "paragraphs": [
+                    "Bu proje, \"roguelike\" bir deste kurma (deckbuilding) oyununun karmaşık durum yönetimini (state management) simüle eden, C diliyle geliştirilmiş sağlam bir komut satırı yorumlayıcısıdır. Sürekli bir okuma-ayrıştırma-yanıtlama döngüsü üzerinden çalışan program; oyuncunun can durumunu, altın birikimini ve düşmanlara karşı savaş mekaniklerini yönetmek için kullanıcı komutlarını işler.",
+                    "Temel durum takibinin ötesine geçen yorumlayıcı, katı girdi doğrulama ve dilbilgisi kuralları uygulayarak hatalı komutların sistem çökmesine yol açmadan reddedilmesini sağlar. Oyun, sınırlı kapasiteye sahip iksir kemeri gibi sabit sınırları ve oyuncunun sürekli gelişen destesi veya kalıntı (relic) koleksiyonu gibi dinamik olarak büyüyen envanterleri takip etmek için merkezi ve kalıcı bir durum mimarisi sürdürür.",
+                    "Teknik açıdan proje; dizilerin sürekli yeniden boyutlandırılması sırasında bellek sızıntılarını önlemek için göstericiler (pointers), malloc ve realloc kullanarak düşük seviyeli dinamik bellek yönetimindeki yetkinliğini göstermektedir. Düşman takibi için karmaşık bir \"Codex\" (Bilgi Bankası) sisteminin entegre edilmesi, uygulamanın iç içe geçmiş veri yapılarını ve karmaşık oyun mantığını sorunsuz bir şekilde işleme yeteneğini daha da öne çıkarmaktadır."
+                ]
+            },
+            "schedSim": {
+                "title": "SchedSim",
+                "shortDescription": "Tamamen GNU Assembly diliyle yazılmış bir CPU işlem planlama simülatörü. Bu proje; donanım seviyesinde programlamayı, manuel bellek yönetimini ve harici C kütüphaneleri kullanılmadan beş farklı planlama algoritmasının uygulanmasını sergiliyor.",
+                "paragraphs": [
+                    "SchedSim, tamamen GNU Assembly (x86-64, AT&T sözdizimi) ile geliştirilmiş düşük seviyeli bir CPU işlem planlama simülatörüdür. Uygulama, donanım seviyesindeki saat döngülerini (clock cycle) işleyerek ve çıktıyı görselleştirerek birden fazla işlemin yürütülme zaman çizelgesini doğru bir şekilde simüle eder.",
+                    "Simülatör, CPU tahsisini belirlemek için beş farklı işlem planlama algoritması uygular: İlk Gelen İlk Hizmet Alır (FCFS), En Kısa İş İlk (SJF), En Kısa Kalan Süre İlk (SRTF), Öncelik İlk (PF) ve özel bir dairesel kuyruk (circular queue) kullanan Round Robin (RR). Her algoritma, gerçekçi işletim sistemi davranışlarını taklit etmek için varış sürelerini (arrival time), işlem sürelerini (burst time) ve yarıda kesme (preemption) kurallarını dinamik olarak yönetir.",
+                    "C standart kütüphanesine (libc) bağımlı olmadan tasarlanan proje, girdi ve çıktı işlemleri için doğrudan sistem çağrıları (syscall) aracılığıyla Linux çekirdeği ile etkileşime girer. Özel bir ASCII-tamsayı ayrıştırıcısı, manuel yazmaç (register) takibi ve .bss bölümünde bitişik bellek yapıları barındıran bu proje, bilgisayar mimarisi ve sistem seviyesinde programlama konusundaki derin anlayışı gözler önüne sermektedir."
+                ]
+            },
+            "parkingVideo": {
+                "title": "Öğretim Amaçlı Video: Paralel ve L Park Rehberi",
+                "shortDescription": "Bilişsel yükü azaltmak ve mekansal algıyı güçlendirmek amacıyla çoklu ortam prensipleriyle tasarlanmış, POV ve geniş açı çekimlerin harmanlandığı adım adım park rehberi.",
+                "description": "Bu proje, karmaşık motor becerilerin (paralel ve L park) çoklu ortam öğrenme prensipleriyle nasıl basitleştirilebileceğini göstermek amacıyla tasarlanmıştır. Sürücü adaylarının bilişsel yükünü azaltmak ve mekansal algılarını güçlendirmek için birinci şahıs (POV) ve geniş açı çekimler stratejik olarak birleştirilmiş; adım adım, net ve hedefe yönelik bir öğretim materyali geliştirilmiştir."
+            },
+            "2048": {
+                "title": "2048 Oyunu",
+                "shortDescription": "C++ ve Qt kullanılarak geliştirilmiş, zenginleştirilmiş bir 2048 bulmaca oyunu. Bu proje; yığın (stack) tabanlı bir geri alma sistemi ve dört özel oyun modu sunarak olay güdümlü mimariyi ve durum yönetimini sergiliyor.",
+                "paragraphs": [
+                    "Bu proje, popüler kaydırmalı bulmaca oyunu 2048'in C++ ve Qt Framework kullanılarak geliştirilmiş, özellik açısından zengin bir varyasyonudur. Klasik 4x4 ızgara üzerinde oynanan oyunda amaç, eşleşen taşları stratejik olarak birleştirerek hedeflenen 2048 taşına ulaşmaktır.",
+                    "Standart oyunun ötesine geçen bu sürüm, oyunculara meydan okumak için dört farklı oyun modu sunuyor. Normal Mod klasik 2048 deneyimi sunarken, Zor Mod (Hard Mode) oyuncu 5 saniye boyunca hareketsiz kalırsa otomatik olarak rastgele geçerli bir hamle yapıyor. Ek olarak, Sınırsız Mod (Unlimited Mode) oyuncuların 2048'e ulaştıktan sonra da oynamaya devam etmesine olanak tanıyor ve Sınırsız Zor Mod, sonsuz oynanışı 5 saniyelik zamanlayıcı baskısıyla birleştiriyor.",
+                    "Oyun, kusursuz bir kullanıcı deneyimi için tasarlanmış çeşitli temel özellikler barındırıyor. Yerleşik yığın (stack) tabanlı geri alma sistemi, oyuncuların hata yaptıklarında bir önceki duruma dönmelerini sağlıyor. Sezgisel grafik arayüzü; klavye kontrolleri, en yüksek skor takibi ve etkileşimli menüler sunarken, aynı zamanda nesne yönelimli programlama (OOP) prensiplerinin, olay güdümlü oyun mantığının ve verimli matris manipülasyonunun başarılı bir uygulamasını sergiliyor."
+                ]
             }
         }
     },

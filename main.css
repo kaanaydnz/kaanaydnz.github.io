@@ -95,6 +95,11 @@ a:hover {
   object-fit: cover;
 }
 
+.portfolio-img-contain {
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
 .portfolio-embed {
   max-width: 600px;
 }

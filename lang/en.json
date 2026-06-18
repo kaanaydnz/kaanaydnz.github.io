@@ -1,7 +1,11 @@
 {
     "page": {
         "footAngleTitle": "FootAngle - Kaan Aydeniz",
-        "horseRacingTitle": "Horse Racing Game - Kaan Aydeniz"
+        "horseRacingTitle": "Horse Racing Game - Kaan Aydeniz",
+        "spireSlayerTitle": "Spire Slayer - Kaan Aydeniz",
+        "schedSimTitle": "SchedSim - Kaan Aydeniz",
+        "parkingVideoTitle": "Parallel & L-Parking Tutorial - Kaan Aydeniz",
+        "2048Title": "2048 Game - Kaan Aydeniz"
     },
     "nav": {
         "home": "Home",
@@ -63,6 +67,8 @@
         "sortOldest": "Oldest first",
         "openProject": "Open Project",
         "openOnScratch": "Open on Scratch",
+        "watchOnYoutube": "Watch on YouTube",
+        "viewonGithub": "View on GitHub",
         "projects": {
             "footAngle": {
                 "title": "FootAngle - Learning Angles Through Football",
@@ -75,8 +81,40 @@
             },
             "horseRacing": {
                 "title": "Horse Racing Game",
-                "shortDescription": "Horse Racing Game is a Scratch-based game where players use probability and strategy to predict race outcomes and experience basic game mechanics through interactive play.",
+                "shortDescription": "Horse Racing Game is a Scratch-based game where players predict race outcomes and experience basic game mechanics through interactive play.",
                 "description": "A horse racing prediction game developed using Scratch. The player selects a horse and earns points based on randomly generated race outcomes. The project demonstrates fundamental game mechanics, including variables, conditionals, and event-driven programming."
+            },
+            "spireSlayer": {
+                "title": "Spire Slayer",
+                "shortDescription": "A command-line interpreter and state management system in C for a roguelike deckbuilder game. This project highlights strict grammar validation, dynamic memory management, and robust data structures.",
+                "paragraphs": [
+                    "This project is a robust command-line interpreter developed in C that simulates the complex state management of a roguelike deckbuilding game. Operating through a continuous read-parse-respond loop, the program processes user commands to manage a player's progression, including tracking health, accumulating gold, and executing combat mechanics against enemies.",
+                    "Going beyond basic state tracking, the interpreter enforces strict input validation and grammar rules, ensuring malformed commands are gracefully rejected without crashing. The game maintains a central, persistent state architecture to track both static boundaries, like a limited potion belt, and dynamically scaling inventories, such as the player's evolving deck and relic collections.",
+                    "Technically, the project demonstrates proficiency in low-level memory management using pointers, malloc, and realloc to prevent memory leaks during continuous array resizing. The integration of a complex \"Codex\" system for enemy tracking further highlights the application's capability to handle nested data structures and complex game logic seamlessly."
+                ]
+            },
+            "schedSim": {
+                "title": "SchedSim",
+                "shortDescription": "A CPU process scheduling simulator written entirely in GNU Assembly. This project showcases bare-metal programming, manual memory management, and the implementation of five distinct scheduling algorithms without external C libraries.",
+                "paragraphs": [
+                    "SchedSim is a low-level CPU process scheduling simulator developed entirely in GNU Assembly (x86-64, AT&T syntax). The application accurately simulates the execution timeline of multiple processes by processing hardware-level clock cycles and visualizing the output string.",
+                    "The simulator implements five distinct process scheduling algorithms to determine CPU allocation: First-Come First-Served (FCFS), Shortest Job First (SJF), Shortest Remaining Time First (SRTF), Priority First (PF), and Round Robin (RR) with a custom circular queue. Each algorithm dynamically handles arrival times, burst times, and preemption rules to mimic realistic operating system behaviors.",
+                    "Designed without reliance on the C standard library, the project interacts directly with the Linux kernel via system calls (syscall) for input and output operations. It features a custom ASCII-to-integer parser, manual register tracking, and contiguous memory struct layouts within the .bss section, demonstrating a deep understanding of computer architecture and system-level programming."
+                ]
+            },
+            "parkingVideo": {
+                "title": "Instructional Video: Parallel & L-Parking Tutorial",
+                "shortDescription": "A step-by-step parking guide combining POV and exterior shots to reduce cognitive load and enhance spatial awareness through multimedia learning principles.",
+                "description": "Designed as a multimedia learning tool, this project breaks down complex driving maneuvers (parallel and perpendicular parking) into digestible, step-by-step instructions. By strategically combining POV and exterior camera angles, the video aims to reduce cognitive load and enhance spatial awareness for learner drivers, delivering a clear and objective-driven educational experience."
+            },
+            "2048": {
+                "title": "2048 Game",
+                "shortDescription": "An enhanced 2048 puzzle game built with C++ and Qt. This project demonstrates event-driven architecture and state management by introducing a stack-based undo system and four custom game modes.",
+                "paragraphs": [
+                    "This project is a feature-rich variation of the popular 2048 sliding-tile puzzle game, developed using C++ and the Qt Framework. Played on a classic 4x4 grid, the objective is to strategically combine matching tiles to reach the elusive 2048 tile.",
+                    "Going beyond the standard game, this version introduces four distinct game modes to challenge players. The Normal Mode offers the classic 2048 experience, while Hard Mode automatically makes a random valid move if the player remains inactive for 5 seconds. Additionally, Unlimited Mode allows players to continue playing after reaching 2048, and Unlimited Hard Mode combines endless gameplay with the pressure of the 5-second timer.",
+                    "The game includes several key features designed for a seamless user experience. A built-in stack-based undo system allows players to revert to their previous state if they make a mistake. The intuitive graphical interface features keyboard controls, best score tracking, and interactive modal menus, all while demonstrating strong object-oriented programming principles, event-driven game logic, and efficient matrix manipulation."
+                ]
             }
         }
     },
