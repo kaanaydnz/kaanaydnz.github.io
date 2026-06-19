@@ -5,7 +5,8 @@
         "spireSlayerTitle": "Spire Slayer - Kaan Aydeniz",
         "schedSimTitle": "SchedSim - Kaan Aydeniz",
         "parkingVideoTitle": "Paralel ve L Park Rehberi - Kaan Aydeniz",
-        "2048Title": "2048 Oyunu - Kaan Aydeniz"
+        "2048Title": "2048 Oyunu - Kaan Aydeniz",
+        "frictionRallyTitle": "Friction Rally - Kaan Aydeniz"
     },
     "nav": {
         "home": "Ana Sayfa",
@@ -114,6 +115,14 @@
                     "Bu proje, popüler kaydırmalı bulmaca oyunu 2048'in C++ ve Qt Framework kullanılarak geliştirilmiş, özellik açısından zengin bir varyasyonudur. Klasik 4x4 ızgara üzerinde oynanan oyunda amaç, eşleşen taşları stratejik olarak birleştirerek hedeflenen 2048 taşına ulaşmaktır.",
                     "Standart oyunun ötesine geçen bu sürüm, oyunculara meydan okumak için dört farklı oyun modu sunuyor. Normal Mod klasik 2048 deneyimi sunarken, Zor Mod (Hard Mode) oyuncu 5 saniye boyunca hareketsiz kalırsa otomatik olarak rastgele geçerli bir hamle yapıyor. Ek olarak, Sınırsız Mod (Unlimited Mode) oyuncuların 2048'e ulaştıktan sonra da oynamaya devam etmesine olanak tanıyor ve Sınırsız Zor Mod, sonsuz oynanışı 5 saniyelik zamanlayıcı baskısıyla birleştiriyor.",
                     "Oyun, kusursuz bir kullanıcı deneyimi için tasarlanmış çeşitli temel özellikler barındırıyor. Yerleşik yığın (stack) tabanlı geri alma sistemi, oyuncuların hata yaptıklarında bir önceki duruma dönmelerini sağlıyor. Sezgisel grafik arayüzü; klavye kontrolleri, en yüksek skor takibi ve etkileşimli menüler sunarken, aynı zamanda nesne yönelimli programlama (OOP) prensiplerinin, olay güdümlü oyun mantığının ve verimli matris manipülasyonunun başarılı bir uygulamasını sergiliyor."
+                ]
+            },
+            "frictionRally": {
+                "title": "Friction Rally: Etkileşimli Fen Bilimleri Modülü",
+                "shortDescription": "Friction Rally, ortaokul öğrencilerine sürtünme kuvveti kavramını öğretmek için tasarlanmış bir Articulate Storyline e-öğrenme modülüdür. Bu modül, öğrencilerin farklı yol zeminlerinin araç hareketine etkisini test ettiği oyunlaştırılmış bir ralli deneyimi sunar.",
+                "paragraphs": [
+                    "Bu proje, ortaokul fen bilimleri müfredatındaki \"Kuvvet ve Hareket\" ünitesi için Articulate Storyline kullanılarak geliştirilmiş senaryo tabanlı bir e-öğrenme materyalidir. Öğretim tasarımı prensipleriyle otomotiv temasını harmanlayan modül, öğrenciyi bir ralli takımı test mühendisi rolüne sokarak oyunlaştırılmış bir deneyim sunar.",
+                    "Kullanıcılar; asfalt, toprak ve buzlu zeminlerin araç üzerindeki etkilerini motion path, teeter (titreme) ve spin (dönme) gibi özel animasyonlar eşliğinde etkileşimli olarak deneyimler. İsim değişkenleri ile kişiselleştirilmiş bir akış sunan modül, gelişmiş tetikleyici mantığının yanı sıra günlük hayat uygulamalarını barındıran etkileşimli bir simülasyon içerir. Bu simülasyonda öğrencilerin, edindikleri bilgileri kullanarak buzlu bir yolda güvenli sürüş için doğru lastiği (yaz veya kış lastiği) sürükle-bırak yöntemiyle seçmesi gerekir. Eğitim, %60 başarı barajı olan; hotspot, eşleştirme ve çoktan seçmeli gibi farklı soru tiplerini barındıran bir şampiyona sınavı ile tamamlanır."
                 ]
             }
         }

@@ -5,7 +5,8 @@
         "spireSlayerTitle": "Spire Slayer - Kaan Aydeniz",
         "schedSimTitle": "SchedSim - Kaan Aydeniz",
         "parkingVideoTitle": "Parallel & L-Parking Tutorial - Kaan Aydeniz",
-        "2048Title": "2048 Game - Kaan Aydeniz"
+        "2048Title": "2048 Game - Kaan Aydeniz",
+        "frictionRallyTitle": "Friction Rally - Kaan Aydeniz"
     },
     "nav": {
         "home": "Home",
@@ -114,6 +115,14 @@
                     "This project is a feature-rich variation of the popular 2048 sliding-tile puzzle game, developed using C++ and the Qt Framework. Played on a classic 4x4 grid, the objective is to strategically combine matching tiles to reach the elusive 2048 tile.",
                     "Going beyond the standard game, this version introduces four distinct game modes to challenge players. The Normal Mode offers the classic 2048 experience, while Hard Mode automatically makes a random valid move if the player remains inactive for 5 seconds. Additionally, Unlimited Mode allows players to continue playing after reaching 2048, and Unlimited Hard Mode combines endless gameplay with the pressure of the 5-second timer.",
                     "The game includes several key features designed for a seamless user experience. A built-in stack-based undo system allows players to revert to their previous state if they make a mistake. The intuitive graphical interface features keyboard controls, best score tracking, and interactive modal menus, all while demonstrating strong object-oriented programming principles, event-driven game logic, and efficient matrix manipulation."
+                ]
+            },
+            "frictionRally": {
+                "title": "Friction Rally: Interactive Science Module",
+                "shortDescription": "Friction Rally is an Articulate Storyline e-learning module designed to teach middle school students the concept of friction force. It achieves this through a gamified racing experience where learners test how different road surfaces impact vehicle motion.",
+                "paragraphs": [
+                    "This scenario-based e-learning project was developed using Articulate Storyline to teach middle school science students about friction and motion. Blending pedagogical principles with automotive gamification, the module places the learner in the role of a rally race test engineer.",
+                    "Users interactively explore how asphalt, dirt, and icy surfaces affect a vehicle's traction. The project utilizes custom motion paths, teeter, and spin animations to simulate real-world vehicle physics. Key technical features include variable-based personalization (custom user names) and complex trigger logic. A standout element is an interactive drag-and-drop simulation where students must apply their knowledge to select the correct tire (summer vs. winter tire) to ensure safety on an icy road scenario. The module concludes with a comprehensive assessment quiz featuring multiple-choice, hotspot, and matching questions, requiring a 60% passing score for successful completion."
                 ]
             }
         }
