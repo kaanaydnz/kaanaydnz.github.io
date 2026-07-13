@@ -22,25 +22,42 @@
     "about": {
         "title": "About Me",
         "paragraphs": [
-            "Hi! I’m Kaan, a junior at Boğaziçi University studying Computer Education and Educational Technology (CET). I graduated from Mehmet Tekinalp High School in 2019 and currently live in Istanbul. I am passionate about technology and education, and I am always curious to learn more.",
-            "I have been interested in technology and computers since childhood. I have developed skills in HTML, JavaScript, Python, C/C++, and more. I am also experienced in using office applications, various operating systems, and tools like Articulate for creating interactive projects.",
-            "I aim to apply my skills in technology and education to create meaningful learning experiences. I am always looking for opportunities to grow, collaborate, and contribute to innovative projects."
+            "Hi! I’m Kaan, a junior at Boğaziçi University studying Computer Education and Educational Technology (CET). I am passionate about creating impactful, interactive learning experiences by combining pedagogical theories with modern software solutions.",
+            "On the educational front, I specialize in instructional design, e-learning development, and gamification. To continuously improve my technical workflows and content creation, I hold specialized certifications in learning management systems and Generative AI applications.",
+            "On the technical side, I have a strong foundation in software development. I actively build back-end web projects, develop system-level applications, and utilize modern deployment environments. My ultimate goal is to bridge the gap between technology and education to build innovative, user-centric solutions."
         ],
+        "skills": {
+            "title": "Core Skills",
+            "items": [
+                "Instructional Design",
+                "E-Learning Development",
+                "Back-End Web Development",
+                "Generative AI",
+                "Gamification"
+            ]
+        },
         "programmingLanguages": {
             "title": "Programming",
             "items": [
                 "C",
                 "C++",
+                "Python",
                 "JavaScript",
-                "Python"
+                "SQL",
+                "Assembly"
             ]
         },
         "tools": {
-            "title": "Tools",
+            "title": "Tools & Environments",
             "items": [
-                "Adobe Premiere",
-                "SketchUp",
+                "Git & GitHub",
+                "Docker",
+                "Linux",
+                "Flask",
                 "Articulate Storyline",
+                "Adobe Premiere Pro",
+                "Moodle",
+                "SketchUp",
                 "Canva"
             ]
         },
@@ -52,14 +69,16 @@
                 "🇩🇪 German (Pre-Intermediate)"
             ]
         },
-        "hobbies": {
-            "title": "Hobbies",
+        "certifications": {
+            "title": "Certifications",
             "items": [
-                "🚘 Vehicles",
-                "🖥️ Technology",
-                "☕️ Coffee",
-                "🎵 Music"
-            ]
+                "CS50x: Introduction to Computer Science – Harvard University",
+                "Moodle Teaching Basics – Moodle",
+                "Apple Teacher – Apple",
+                "Governing Education in the Age of AI",
+                "HP AI Teacher Academy 2.0 – HP"
+            ],
+            "linkedin": "For a complete list of my verified credentials, please visit my LinkedIn profile."
         }
     },
     "portfolio": {

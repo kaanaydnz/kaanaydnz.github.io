@@ -22,44 +22,63 @@
     "about": {
         "title": "Hakkımda",
         "paragraphs": [
-            "Merhaba! Ben Kaan. Boğaziçi Üniversitesi Bilgisayar ve Öğretim Teknolojileri Öğretmenliği (BÖTE) bölümünde üçüncü sınıf öğrencisiyim. 2019 yılında Mehmet Tekinalp Lisesi’nden mezun oldum ve İstanbul’da yaşıyorum. Teknoloji ve eğitime büyük bir ilgi duyuyor, sürekli öğrenmeye ve kendimi geliştirmeye önem veriyorum.",
-            "Çocukluk yıllarımdan beri bilgisayar ve teknolojiyle iç içeyim. HTML, JavaScript, Python, C/C++ gibi dillerde çalışmalar yaptım. Bunun yanında ofis uygulamaları, farklı işletim sistemleri ve Articulate gibi araçlarla etkileşimli projeler geliştirme konusunda deneyim kazandım.",
-            "Teknoloji ve eğitim alanındaki bilgi ve becerilerimi anlamlı öğrenme deneyimleri tasarlamak için kullanmayı hedefliyorum. Sürekli gelişmeye, iş birliğine ve yenilikçi projelerde yer almaya açık biriyim."
+            "Merhaba! Ben Kaan, Boğaziçi Üniversitesi Bilgisayar ve Öğretim Teknolojileri Eğitimi (BÖTE) bölümünde 3. sınıf öğrencisiyim. Pedagojik teorileri modern yazılım çözümleriyle birleştirerek etkili ve etkileşimli öğrenme deneyimleri yaratma konusunda tutkuluyum.",
+            "Eğitim tarafında öğretim tasarımı, e-öğrenme geliştirme ve oyunlaştırma alanlarında uzmanlaşıyorum. Teknik iş akışlarımı ve içerik üretimimi sürekli geliştirmek için öğrenme yönetim sistemleri (LMS) ve Üretken Yapay Zeka uygulamaları üzerine uzmanlık sertifikalarına sahibim.",
+            "Teknik tarafta ise güçlü bir yazılım geliştirme temeline sahibim. Aktif olarak arka uç (back-end) web projeleri ve sistem seviyesinde uygulamalar geliştiriyor, modern dağıtım (deployment) ortamlarını kullanıyorum. Nihai hedefim, teknoloji ve eğitim arasındaki köprüyü kurarak yenilikçi ve kullanıcı odaklı çözümler üretmek."
         ],
+        "skills": {
+            "title": "Temel Yetenekler",
+            "items": [
+                "Öğretim Tasarımı (Instructional Design)",
+                "E-Öğrenme Geliştirme",
+                "Back-End Web Geliştirme",
+                "Üretken Yapay Zeka (Generative AI)",
+                "Oyunlaştırma"
+            ]
+        },
         "programmingLanguages": {
             "title": "Programlama",
             "items": [
                 "C",
                 "C++",
+                "Python",
                 "JavaScript",
-                "Python"
+                "SQL",
+                "Assembly"
             ]
         },
         "tools": {
-            "title": "Araçlar",
+            "title": "Araçlar ve Ortamlar",
             "items": [
-                "Adobe Premiere",
-                "SketchUp",
+                "Git & GitHub",
+                "Docker",
+                "Linux",
+                "Flask",
                 "Articulate Storyline",
+                "Adobe Premiere Pro",
+                "Moodle",
+                "SketchUp",
                 "Canva"
             ]
         },
         "spokenLanguages": {
             "title": "Diller",
             "items": [
-                "🇹🇷 Türkçe (Ana Dil)",
+                "🇹🇷 Türkçe (Anadil)",
                 "🇬🇧 İngilizce (B2–C1)",
-                "🇩🇪 Almanca (Başlangıç)"
+                "🇩🇪 Almanca (Pre-Intermediate)"
             ]
         },
-        "hobbies": {
-            "title": "Hobiler",
+        "certifications": {
+            "title": "Sertifikalar",
             "items": [
-                "🚘 Araçlar",
-                "🖥️ Teknoloji",
-                "☕️ Kahve",
-                "🎵 Müzik"
-            ]
+                "CS50x: Introduction to Computer Science – Harvard University",
+                "Moodle Teaching Basics – Moodle",
+                "Apple Teacher – Apple",
+                "Governing Education in the Age of AI",
+                "HP AI Teacher Academy 2.0 – HP"
+            ],
+            "linkedin": "Sertifikalarımın tam listesi için lütfen LinkedIn profilimi ziyaret edin."
         }
     },
     "portfolio": {
