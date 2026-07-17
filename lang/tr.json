@@ -6,7 +6,8 @@
         "schedSimTitle": "SchedSim - Kaan Aydeniz",
         "parkingVideoTitle": "Paralel ve L Park Rehberi - Kaan Aydeniz",
         "2048Title": "2048 Oyunu - Kaan Aydeniz",
-        "frictionRallyTitle": "Friction Rally - Kaan Aydeniz"
+        "frictionRallyTitle": "Friction Rally - Kaan Aydeniz",
+        "traceDietTitle": "TraceDiet - Kaan Aydeniz"
     },
     "nav": {
         "home": "Ana Sayfa",
@@ -142,6 +143,15 @@
                 "paragraphs": [
                     "Bu proje, ortaokul fen bilimleri müfredatındaki \"Kuvvet ve Hareket\" ünitesi için Articulate Storyline kullanılarak geliştirilmiş senaryo tabanlı bir e-öğrenme materyalidir. Öğretim tasarımı prensipleriyle otomotiv temasını harmanlayan modül, öğrenciyi bir ralli takımı test mühendisi rolüne sokarak oyunlaştırılmış bir deneyim sunar.",
                     "Kullanıcılar; asfalt, toprak ve buzlu zeminlerin araç üzerindeki etkilerini motion path, teeter (titreme) ve spin (dönme) gibi özel animasyonlar eşliğinde etkileşimli olarak deneyimler. İsim değişkenleri ile kişiselleştirilmiş bir akış sunan modül, gelişmiş tetikleyici mantığının yanı sıra günlük hayat uygulamalarını barındıran etkileşimli bir simülasyon içerir. Bu simülasyonda öğrencilerin, edindikleri bilgileri kullanarak buzlu bir yolda güvenli sürüş için doğru lastiği (yaz veya kış lastiği) sürükle-bırak yöntemiyle seçmesi gerekir. Eğitim, %60 başarı barajı olan; hotspot, eşleştirme ve çoktan seçmeli gibi farklı soru tiplerini barındıran bir şampiyona sınavı ile tamamlanır."
+                ]
+            },
+            "traceDiet": {
+                "title": "TraceDiet - Kişiselleştirilmiş Diyet ve Fitness Takipçisi",
+                "shortDescription": "Python, Flask ve SQLite ile geliştirilen, günlük kalori alımını ve fiziksel gelişimi takip eden full-stack bir web uygulaması. Mifflin-St Jeor denklemini kullanarak bilimsel kalori hesaplaması yapar ve mobil uyumlu (mobile-first) özel bir kullanıcı arayüzü sunar.",
+                "paragraphs": [
+                    "TraceDiet, günlük kalori alımının ve fiziksel gelişimin takibini kolaylaştırmak için tasarlanmış kişiselleştirilmiş, web tabanlı bir sağlık uygulamasıdır. Full-stack bir proje olarak geliştirilen uygulamanın backend mimarisi Python, Flask ve SQLite ile güçlendirilmiş; frontend tarafında ise sezgisel ve her cihaza uyumlu (responsive) bir kullanıcı deneyimi sunmak için HTML, CSS ve Bootstrap 5 kullanılmıştır.",
+                    "Basit ve standart kalori sayımının ötesine geçen uygulama, kullanıcının yaş, cinsiyet, kilo ve boy gibi kişisel metriklerine dayanarak en doğru günlük kalori ihtiyacını hesaplamak için bilimsel olarak kanıtlanmış Mifflin-St Jeor denklemini entegre eder. Dinamik kontrol paneli (dashboard); tüketilen toplam kalori, mevcut VKİ (Vücut Kitle İndeksi) ve hedef kiloya olan ilerleme durumu hakkında gerçek zamanlı güncellemeler sağlar. Ayrıca, özel gelişim kaydetme sistemi, kullanıcı fiziksel verilerini güncellediği anda bu temel metrikleri otomatik olarak yeniden hesaplar.",
+                    "Uygulamanın sorunsuz ve kullanıcı dostu olmasını sağlamak için önemli mimari kararlar alınmıştır. Zahmetsiz bir 'tak-çalıştır' kurulumu oluşturmak amacıyla uygulama, manuel SQL şeması çalıştırma ihtiyacını ortadan kaldıran ve doğrudan Python kodu içine yazılmış otomatik bir veritabanı başlatma (initialization) fonksiyonuna sahiptir. Frontend tarafında ise standart Bootstrap hamburger menüleri kullanmak yerine flexbox tabanlı özel bir navigasyon sistemi tasarlanmış; böylece temel özelliklerin mobil cihazlarda simetrik olarak hizalanması ve tek tıkla erişilebilir kalması sağlanmıştır."
                 ]
             }
         }

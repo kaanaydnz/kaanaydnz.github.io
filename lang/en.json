@@ -6,7 +6,8 @@
         "schedSimTitle": "SchedSim - Kaan Aydeniz",
         "parkingVideoTitle": "Parallel & L-Parking Tutorial - Kaan Aydeniz",
         "2048Title": "2048 Game - Kaan Aydeniz",
-        "frictionRallyTitle": "Friction Rally - Kaan Aydeniz"
+        "frictionRallyTitle": "Friction Rally - Kaan Aydeniz",
+        "traceDietTitle": "TraceDiet - Kaan Aydeniz"
     },
     "nav": {
         "home": "Home",
@@ -142,6 +143,15 @@
                 "paragraphs": [
                     "This scenario-based e-learning project was developed using Articulate Storyline to teach middle school science students about friction and motion. Blending pedagogical principles with automotive gamification, the module places the learner in the role of a rally race test engineer.",
                     "Users interactively explore how asphalt, dirt, and icy surfaces affect a vehicle's traction. The project utilizes custom motion paths, teeter, and spin animations to simulate real-world vehicle physics. Key technical features include variable-based personalization (custom user names) and complex trigger logic. A standout element is an interactive drag-and-drop simulation where students must apply their knowledge to select the correct tire (summer vs. winter tire) to ensure safety on an icy road scenario. The module concludes with a comprehensive assessment quiz featuring multiple-choice, hotspot, and matching questions, requiring a 60% passing score for successful completion."
+                ]
+            },
+            "traceDiet": {
+                "title": "TraceDiet - Personalized Diet and Fitness Tracker",
+                "shortDescription": "A full-stack web application built with Python, Flask, and SQLite that tracks daily caloric intake and physical progress. It features scientific calorie calculation using the Mifflin-St Jeor equation and a custom mobile-first UI.",
+                "paragraphs": [
+                    "TraceDiet is a personalized, web-based health application designed to simplify the monitoring of daily caloric intake and physical progress. Developed as a full-stack project, the backend architecture is powered by Python, Flask, and SQLite, while the frontend utilizes HTML, CSS, and Bootstrap 5 to deliver an intuitive and responsive user experience.",
+                    "Going beyond simple flat-rate calorie counting, the application integrates the scientifically backed Mifflin-St Jeor equation to calculate precise daily caloric needs based on user-specific metrics such as age, gender, weight, and height. The dynamic dashboard provides real-time updates on total calories consumed, current BMI, and progress toward target weights. Additionally, a dedicated progress logging system automatically recalculates these baseline metrics whenever a user updates their physical data.",
+                    "Significant architectural choices were made to ensure the application is robust and user-friendly. To create a seamless plug-and-play setup, the app features an automated database initialization function written directly in Python, bypassing the need for manual SQL schema executions. On the frontend, standard Bootstrap hamburger menus were replaced with a custom flexbox-based navigation system, ensuring that core features remain symmetrically aligned and instantly accessible on mobile devices."
                 ]
             }
         }
